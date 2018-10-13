@@ -1,0 +1,173 @@
+/* Global */
+:root {
+    --green: #00674B;
+    --white: #f8f8f8;
+    --black: #272727;
+}
+
+html {
+    /* border-box box model allows us to add padding and border to our elements without increasing their size */
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+
+/* BODY */
+body {
+    letter-spacing: -1px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+header {
+    background-color: var(--green);
+    height: 100px;
+    padding-top: 10px;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Logo */
+header .container .menu .logo {
+    color: var(--white);
+    font-size: 50px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/* Navigation */
+.menu nav {
+    float: right;
+}
+
+.menu nav ul {
+    float: left;
+    list-style: none;
+    margin: 0;
+    width: fit-content;
+}
+
+.menu nav ul li {
+    display: block;
+    float: left;
+    list-style: none;
+    padding: 0 10px;
+}
+
+.nav-links {
+    margin-top: 30px;
+}
+
+.menu nav ul li a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+/* Search Bar */
+header .container .menu nav .form {
+    margin-top: 15px;
+}
+
+header .container .menu nav form input[type=text] {
+    background-image: url("../imgs/3-512.png");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 4px 7px;
+    padding: 8px 10px 8px 25px;
+    border-radius: 27px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    outline: none;
+    width: 160px;
+    transition: width 0.3s ease-in-out;
+    -webkit-transition: width 0.3s ease-in-out;
+    -moz-transition: width 0.3s ease-in-out;
+    -ms-transition: width 0.3s ease-in-out;
+    -o-transition: width 0.3s ease-in-out;
+}
+
+header .container .menu nav form input[type=text]:focus {
+    width: 250px;
+}
+
+/* ABOUT */
+
+#about {
+    height: 1100px;
+}
+
+#about .container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.our-story h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.our-values h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.our-values h4 {
+    font-size: 20px;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: var(--green);
+    color: var(--white);
+}
+
+footer .container {
+    padding: 40px;
+}
+
+.address {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    list-style: none;
+    line-height: 30px;
+}
+
+ul .copyright {
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+@media only screen and (min-width: 768px) {
+    footer .more-info {
+        padding-left: 200px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    footer .more-info {
+        padding-left: 300px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    footer .more-info {
+        padding-left: 520px;
+    }
+}
