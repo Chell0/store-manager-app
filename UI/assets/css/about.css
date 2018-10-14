@@ -96,116 +96,38 @@ header .container .menu nav form input[type=text] {
     -webkit-transition: width 0.3s ease-in-out;
     -moz-transition: width 0.3s ease-in-out;
     -ms-transition: width 0.3s ease-in-out;
-    -o-transition: width 0.3s ease-in-out; 
+    -o-transition: width 0.3s ease-in-out;
 }
 
 header .container .menu nav form input[type=text]:focus {
     width: 250px;
 }
 
-/* BANNER SECTION */
-.banner .container {
-    width: 85%;
-    height: 600px;
+/* ABOUT */
+
+#about {
+    height: 1100px;
+}
+
+#about .container {
+    width: 80%;
     margin: 0 auto;
     overflow: hidden;
 }
 
-.banner {
-    background-image: url("../imgs/banner.jpg");
-    background-size: cover;
-    background-position: center;
-    top: 0;
-    left: 0; 
-    z-index: 1;
-}
-
-.banner p {
-    color: var(--white);
-    font-size: 70px;
-    font-weight: 800;
+.our-story h2 {
     text-align: center;
-    text-shadow: 2px 2px 8px #ffc600;
+    font-size: 30px;
 }
 
-.banner p span {
-    text-transform: uppercase;
-}
-
-
-/* PRODUCTS SECTION */
-#tech .container {
-    display: grid;
-    grid-template-columns: 300px 300px 300px 300px;
-    grid-template-rows: 500px 500px 500px 500px;
-    grid-gap: 10px;
-    height: 1500px;
-    justify-content: center;
-    padding-top: 30px;
-    padding: 20px;
-}
-
-.gadget {
-    background: rgba(0, 0, 0, .03);
-    justify-content: center;
-    align-items: center;
-    border: 5px solid rgba(0, 0, 0, 0.03);
-    border-radius: 3px;
-    font-size: 14px;
-    height: 444px;
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;
-    transition: transform 0.5s;
-}
-
-.gadget::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transition: opacity 2s cubic-bezier(0.165, 0.84, 0.44, 1);
-    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
-    content: "";
-    opacity: 0;
-    z-index: -1;
-}
-
-.gadget:hover,
-.gadget:focus {
-    transform: scale3d(1.006, 1.006, 1);
-}
-
-.gadget:hover::after,
-.gadget:focus::after {
-    opacity: 1;
-}
-
-
-.gadget p {
-    /* font-size: 16px; */
-    letter-spacing: 1px;
+.our-values h2 {
+    font-size: 30px;
     text-align: center;
 }
 
-/* .gadget p.stock {
-    width: 20px;
-} */
-
-.gadget p.stock input {
-    width: 40px;
+.our-values h4 {
+    font-size: 20px;
 }
-
-.gadget p.details {
-    background: var(--green);
-    color: var(--white);
-    text-align: center;
-    border: 1px solid var(--green);
-    padding: 10px 5px;
-}
-
 
 
 /* FOOTER */
