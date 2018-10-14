@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A web app that helps store owners manage sales and product inventory records">
+    <meta name="keywords" content="store manager, manage sales, manage products, inventory records">
+    <meta name="author" content="Gabriel Machel">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Store Manager</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/cart.css">
+</head>
+
+<body>
+    <!-- HEADER & NAVIGATION -->
+    <header>
+        <div class="container">
+            <div class="menu">
+                <a href="index.html" class="logo">Store Manager</a>
+                <nav>
+                    <ul>
+                        <li>
+                            <form action="" class="form">
+                                <input type="text" name="" placeholder="Categories...">
+                            </form>
+                        </li>
+                        <li class="nav-links"><a href="productlist.html">Home</a></li>
+                        <li class="nav-links"><a href="sales.html">Sales</a></li>
+                        <li class="nav-links"><a href="cart.html" id="cart"><i class="fa fa-shopping-cart fa-lg"></i>
+                                <span class="badge">5</span>
+                            </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- CART SECTION -->
+    <div id="store-cart">
+        <div class="container">
+            <div class="store-cart">
+                <div class="store-cart-header">
+                    <i class="fa fa-shopping-cart fa-lg"></i> <span class="badge">5</span>
+                    <div class="store-cart-total">
+                        <span class="lighter-text">Total:</span>
+                        <span class="main-color-text">Kshs. 526,000</span>
+                    </div>
+                </div>
+                <!--end shopping-cart-header -->
+
+                <ul class="store-cart-items">
+                    <li class="clearfix">
+                        <img src="./assets/imgs/dell-monitor.png" alt="item1" width="50" height="50">
+                        <span class="product-name">Dell Monitor</span>
+                        <span class="product-price">Kshs. 65,500</span>
+                        <span class="product-quantity">Quantity: 04</span>
+                    </li>
+
+                    <li class="clearfix">
+                        <img src="./assets/imgs/iWatch.png" alt="item1" width="50" height="50">
+                        <span class="product-name">Apple Watch</span>
+                        <span class="product-price">Kshs. 32,500</span>
+                        <span class="product-quantity">Quantity: 02</span>
+                    </li>
+
+                    <li class="clearfix">
+                        <img src="./assets/imgs/head-phones.jpg" alt="item1" width="50" height="50">
+                        <span class="product-name">Boom Headphones</span>
+                        <span class="product-price">Kshs. 5,500</span>
+                        <span class="product-quantity">Quantity: 01</span>
+                    </li>
+
+                    <li class="clearfix">
+                        <img src="./assets/imgs/camera.png" alt="item1" width="50" height="50">
+                        <span class="product-name">HDR Camera</span>
+                        <span class="product-price">Kshs. 80,500</span>
+                        <span class="product-quantity">Quantity: 02</span>
+                    </li>
+
+                    <li class="clearfix">
+                        <img src="./assets/imgs/destinyps4bundle.png" alt="item1" width="50" height="50">
+                        <span class="product-name">Xbox One</span>
+                        <span class="product-price">Kshs. 32,500</span>
+                        <span class="product-quantity">Quantity: 01</span>
+                    </li>
+                </ul>
+                <a href="productlist.html" class="button">Checkout</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER SECTION -->
+    <footer>
+        <div class="container">
+            <div class="more-info">
+                <ul class="address">
+                    <li>Store Manager</li>
+                    <li>19th, Mvuma Nyuki</li>
+                    <li>12345 Nairobi - Kenya</li>
+                    <li>Tel. +254 (020) 123 45678</li>
+                    <li>storemanager.com</li>
+                    <li class="copyright">&copy; store manager app 2018</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
