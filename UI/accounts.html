@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A web app that helps store owners manage sales and product inventory records">
+    <meta name="keywords" content="store manager, manage sales, manage products, inventory records">
+    <meta name="author" content="Gabriel Machel">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Store Manager</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/accounts.css">
+</head>
+
+<body>
+    <!-- HEADER & NAVIGATION -->
+    <header>
+        <div class="container">
+            <div class="menu">
+                <a href="index.html" class="logo">Store Manager</a>
+                <nav>
+                    <ul>
+                        <li>
+                            <form action="" class="form">
+                                <input type="text" name="" placeholder="Categories...">
+                            </form>
+                        </li>
+                        <li class="nav-links"><a href="admin.html">Home</a></li>
+                        <li class="nav-links"><a href="add_edit.html">Add/Edit</a></li>
+                        <li class="nav-links"><a href="accounts.html">Accounts</a></li>
+                        <li class="nav-links"><a href="cart.html" id="cart"><i class="fa fa-shopping-cart fa-lg"></i>
+                                <span class="badge">0</span>
+                            </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- ACCOUNTS SECTION -->
+    <div id="create">
+        <div class="container">
+            <div class="box">
+                <h2>Create account</h2>
+                <form>
+                    <div class="inputBox">
+                        <input type="text" name="" required>
+                        <label>Enter First Name</label>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="" required>
+                        <label>Enter Last Name</label>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="" required>
+                        <label>Enter Email Address</label>
+                    </div>
+
+                    <div class="inputBox">
+                        <input type="password" name="" required>
+                        <label>Enter Password</label>
+                    </div>
+                    <input type="radio" name="gender" id="rd">&nbsp;&nbsp;&nbsp;&nbsp;<span id="but">Male</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="gender" id="rd">&nbsp;&nbsp;&nbsp;&nbsp;<span id="but">Female</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" id="rd">&nbsp;&nbsp;&nbsp;&nbsp;<span id="but">Admin</span><br><br>
+                    <input type="submit" value="Register" id="butt">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER SECTION -->
+    <footer>
+        <div class="container">
+            <div class="more-info">
+                <ul class="address">
+                    <li>Store Manager</li>
+                    <li>19th, Mvuma Nyuki</li>
+                    <li>12345 Nairobi - Kenya</li>
+                    <li>Tel. +254 (020) 123 45678</li>
+                    <li>storemanager.com</li>
+                    <li class="copyright">&copy; store manager app 2018</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

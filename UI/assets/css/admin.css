@@ -96,42 +96,12 @@ header .container .menu nav form input[type=text] {
     -webkit-transition: width 0.3s ease-in-out;
     -moz-transition: width 0.3s ease-in-out;
     -ms-transition: width 0.3s ease-in-out;
-    -o-transition: width 0.3s ease-in-out; 
+    -o-transition: width 0.3s ease-in-out;
 }
 
 header .container .menu nav form input[type=text]:focus {
     width: 250px;
 }
-
-/* BANNER SECTION */
-.banner .container {
-    width: 85%;
-    height: 600px;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-.banner {
-    background-image: url("../imgs/banner.jpg");
-    background-size: cover;
-    background-position: center;
-    top: 0;
-    left: 0; 
-    z-index: 1;
-}
-
-.banner p {
-    color: var(--white);
-    font-size: 70px;
-    font-weight: 800;
-    text-align: center;
-    text-shadow: 2px 2px 8px #ffc600;
-}
-
-.banner p span {
-    text-transform: uppercase;
-}
-
 
 /* PRODUCTS SECTION */
 #tech .container {
@@ -185,14 +155,9 @@ header .container .menu nav form input[type=text]:focus {
 
 
 .gadget p {
-    /* font-size: 16px; */
     letter-spacing: 1px;
     text-align: center;
 }
-
-/* .gadget p.stock {
-    width: 20px;
-} */
 
 .gadget p.stock input {
     width: 40px;
@@ -206,6 +171,37 @@ header .container .menu nav form input[type=text]:focus {
     padding: 10px 5px;
 }
 
+.gadget p.details:hover {
+    background: var(--white);
+    border: 2px solid var(--green);
+    color: var(--green);
+}
+
+.gadget .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: var(--green);
+}
+
+.gadget:hover .overlay {
+    opacity: 1;
+}
+
+.gadget .overlay .text {
+    color: var(--white);
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
 
 
 /* FOOTER */

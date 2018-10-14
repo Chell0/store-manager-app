@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A web app that helps store owners manage sales and product inventory records">
+    <meta name="keywords" content="store manager, manage sales, manage products, inventory records">
+    <meta name="author" content="Gabriel Machel">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Store Manager</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/add_edit.css">
+</head>
+
+<body>
+    <!-- HEADER & NAVIGATION -->
+    <header>
+        <div class="container">
+            <div class="menu">
+                <a href="index.html" class="logo">Store Manager</a>
+                <nav>
+                    <ul>
+                        <li>
+                            <form action="" class="form">
+                                <input type="text" name="" placeholder="Categories...">
+                            </form>
+                        </li>
+                        <li class="nav-links"><a href="admin.html">Home</a></li>
+                        <li class="nav-links"><a href="add_edit.html">Add/Edit</a></li>
+                        <li class="nav-links"><a href="accounts.html">Accounts</a></li>
+                        <li class="nav-links"><a href="cart.html" id="cart"><i class="fa fa-shopping-cart fa-lg"></i>
+                                <span class="badge">0</span>
+                            </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- ADD/EDIT SECTION -->
+    <section id="tech">
+        <div class="container">
+            <h1>Product List</h1>
+            <div class="product-cart">
+                <div class="column-labels">
+                    <label class="product-image">Image</label>
+                    <label class="product-details">Product</label>
+                    <label class="product-price">Price</label>
+                    <label class="product-quantity">Quantity</label>
+                    <label class="product-quantity">Add/Edit</label>
+                    <label class="item-complete">Delete</label>
+                </div>
+                <div class="product">
+                    <div class="product-image">
+                        <img src="./assets/imgs/dell-monitor.png">
+                    </div>
+                    <div class="product-details">
+                        <div class="product-title">Dell Monitor</div>
+                        <p class="product-description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                            nonumy<br>eirmod temporinvidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                            et.</p>
+                    </div>
+                    <div class="product-price"> 55,000</div>
+                    <div class="product-quantity">
+                        <input type="number" value="2" min="1">
+                    </div>
+                    <div class="item-complete">
+                        <button class="complete-item">
+                            Add/Edit
+                        </button>
+                    </div>
+                    <div class="item-removal">
+                        <button class="remove-item">
+                            Delete
+                        </button>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-image">
+                        <img src="./assets/imgs/iWatch.png">
+                    </div>
+                    <div class="product-details">
+                        <div class="product-title">Apple Watch</div>
+                        <p class="product-description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                            nonumy<br>eirmod temporinvidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                            et.ml soda.</p>
+                    </div>
+                    <div class="product-price"> 32,500</div>
+                    <div class="product-quantity">
+                        <input type="number" value="2" min="1">
+                    </div>
+                    <div class="item-complete">
+                        <button class="complete-item">
+                            Add/Edit
+                        </button>
+                    </div>
+                    <div class="item-removal">
+                        <button class="remove-item">
+                            Delete
+                        </button>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-image">
+                        <img src="./assets/imgs/JBL.png">
+                    </div>
+                    <div class="product-details">
+                        <div class="product-title">Wireless Speakers</div>
+                        <p class="product-description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                            nonumy<br>eirmod temporinvidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                            et.ll fries and soda.</p>
+                    </div>
+                    <div class="product-price"> 7,500</div>
+                    <div class="product-quantity">
+                        <input type="number" value="2" min="1">
+                    </div>
+                    <div class="item-complete">
+                        <button class="complete-item">
+                            Add/Edit
+                        </button>
+                    </div>
+                    <div class="item-removal">
+                        <button class="remove-item">
+                            Delete
+                        </button>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-image">
+                        <img src="./assets/imgs/samsung-tab.jpg">
+                    </div>
+                    <div class="product-details">
+                        <div class="product-title">Samsung Note7</div>
+                        <p class="product-description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                            nonumy<br>eirmod temporinvidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                            et.ll fries and a soda.</p>
+                    </div>
+                    <div class="product-price"> 70,000</div>
+                    <div class="product-quantity">
+                        <input type="number" value="1" min="1">
+                    </div>
+                    <div class="item-complete">
+                        <button class="complete-item">
+                            Add/Edit
+                        </button>
+                    </div>
+                    <div class="item-removal">
+                        <button class="remove-item">
+                            Delete
+                        </button>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-image">
+                        <img src="./assets/imgs/camera.png">
+                    </div>
+                    <div class="product-details">
+                        <div class="product-title">HDR Camera</div>
+                        <p class="product-description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                            nonumy<br>eirmod temporinvidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                            et..</p>
+                    </div>
+                    <div class="product-price"> 65,000</div>
+                    <div class="product-quantity">
+                        <input type="number" value="1" min="1">
+                    </div>
+                    <div class="item-complete">
+                        <button class="complete-item">
+                            Add/Edit
+                        </button>
+                    </div>
+                    <div class="item-removal">
+                        <button class="remove-item">
+                            Delete
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer>
+        <div class="container">
+            <div class="more-info">
+                <ul class="address">
+                    <li>Store Manager</li>
+                    <li>19th, Mvuma Nyuki</li>
+                    <li>12345 Nairobi - Kenya</li>
+                    <li>Tel. +254 (020) 123 45678</li>
+                    <li>storemanager.com</li>
+                    <li class="copyright">&copy; store manager app 2018</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
